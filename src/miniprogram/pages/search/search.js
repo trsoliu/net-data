@@ -37,7 +37,7 @@ Page({
 			data: {
 				"phone": that.data.inputValue,
 				"dtype": 'json',
-				"key": "0e18a858f4fd7ffff9ef74353d7d2110"
+				"key": "0e18a858f4fd7ffff9ef1274353d237d2110"
 			},
 			success: function(res) {
 				console.log(res, 8888);
