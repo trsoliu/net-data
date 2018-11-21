@@ -1,0 +1,15 @@
+%primaryBtn {
+    width: 74.6%;
+    padding: rem(26) 0;
+    text-align: center;
+    font-size: rem(36);
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: rem(36);
+    background: #1786F6;
+    border-radius: rem(200);
+    box-shadow: 0 rem(12) rem(20) 0 rgba(46, 86, 127, .3);
+    &:active {
+        background: #167BE2;
+    }
+}

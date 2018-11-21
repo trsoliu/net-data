@@ -1,0 +1,19 @@
+<!--pages/storageConsole/storageConsole.wxml-->
+<view class="container">
+	<view class="top-search">
+	<view class="search-input">
+		<icon class="iconfont icon-sousuo icon-search" />
+		<input class="input" maxlength="11" placeholder-style="color:#999999;opacity:0.4;" confirm-type="search" bindconfirm="serach" bindinput="getInputValue" placeholder="请输入电话号码" value="{{inputValue}}" />
+		<view class="iconfont icon-qingchushuru icon-clear" wx:if="{{inputValue != ''}}" capture-catch:tap="clear" data-type="account"></view>
+	</view>
+	<text class="search" capture-catch:tap="serach">搜索</text>
+</view>
+<view class="list">
+	<view>省:{{res.province}}</view>
+	<view>市:{{res.city}}</view>
+	<view>区号:{{res.areacode}}</view>
+	<view>邮政:{{res.zip}}</view>
+	<view>运营商:{{res.company}}</view>
+</view>
+
+</view>

@@ -1,0 +1,43 @@
+{
+  "name": "netData",
+  "version": "1.0.0",
+  "description": "万网数据",
+  "main": "app.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "trsoliu",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.5.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "less": "^2.7.2",
+    "less-plugin-functions": "^1.0.0",
+    "precss": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

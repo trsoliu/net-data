@@ -1,0 +1,131 @@
+.loaders {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loader {
+        // background: skyblue;
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: column;
+        flex-shrink: 0;
+        flex-basis: 25%;
+        max-width: 10%;
+        height: rem(40);
+        align-items: center;
+        justify-content: center;
+        .loader-inner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: rem(-14);
+            .div{
+                background-color: #ccc;
+                width: rem(3);
+                height: rem(9);
+                border-radius: rem(2);
+                margin: rem(2);
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                position: absolute;
+            }
+        }
+    }
+    .loader-text{
+        font-size: rem(24);
+        opacity: 0.4;
+        margin-left: rem(10);
+    }
+}
+
+
+@keyframes line-spin-fade-loader {
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.line-spin-fade-loader {
+    position: relative;
+}
+
+.line-spin-fade-loader>.div:nth-child(1) {
+    top: rem(12);
+    left: 0;
+    -webkit-animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.12s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(2) {
+    top: rem(9);
+    left: rem(9);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.24s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(3) {
+    top: 0;
+    left: rem(12);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.36s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(4) {
+    top: rem(-9);
+    left: rem(9);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.48s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(5) {
+    top:rem(-12);
+    left: 0;
+    -webkit-animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.6s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(6) {
+    top: rem(-9);
+    left: rem(-9);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.72s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(7) {
+    top: 0;
+    left: rem(-12);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.84s infinite ease-in-out;
+}
+
+.line-spin-fade-loader>.div:nth-child(8) {
+    top: rem(9);
+    left: rem(-9);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+    animation: line-spin-fade-loader 1.2s 0.96s infinite ease-in-out;
+}
+

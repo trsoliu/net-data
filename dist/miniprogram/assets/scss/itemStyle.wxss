@@ -1,0 +1,195 @@
+.search-result .list:after {
+  content: ' ';
+  width: 200%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -100%;
+  bottom: -100%;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  pointer-events: none; }
+
+#flex, .search-result .list .left, .search-result .list .left .head, .search-result .list .center, .search-result .list .right, .no-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.search-result {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 7.5rem); }
+  .search-result .search-none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: calc(100% - 80rpx); }
+    .search-result .search-none .none-image {
+      width: rem(632);
+      height: rem(157); }
+    .search-result .search-none .none-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      height: rem(45);
+      font-size: rem(30);
+      color: #9eadbf; }
+  .search-result .list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: rem(132);
+    padding: 0 rem(20);
+    background: white; }
+    .search-result .list:after {
+      border-bottom: 1px solid #e2e3e7; }
+    .search-result .list .left {
+      width: 49%; }
+      .search-result .list .left .head {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: rem(72);
+        height: rem(72);
+        border-radius: 50%;
+        color: white;
+        margin-right: rem(15); }
+      .search-result .list .left .man {
+        background: #7FB3FF; }
+      .search-result .list .left .woman {
+        background: #FF7272; }
+      .search-result .list .left .unknow {
+        background: #B8C3D0; }
+      .search-result .list .left .user {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: calc(100% - 87rpx);
+        height: rem(74); }
+        .search-result .list .left .user .name-star {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .search-result .list .left .user .name-star .name {
+            font-size: rem(30);
+            color: #333333;
+            max-width: 63%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .search-result .list .left .user .name-star .star image {
+            width: rem(28);
+            height: rem(28);
+            margin-left: rem(20); }
+        .search-result .list .left .user .phone {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          font-size: rem(26);
+          color: #999999;
+          margin-top: rem(20); }
+    .search-result .list .center .incoming,
+    .search-result .list .center .duration {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: rem(74); }
+      .search-result .list .center .incoming .title,
+      .search-result .list .center .duration .title {
+        font-size: rem(19);
+        color: #c6c6c6; }
+      .search-result .list .center .incoming .time,
+      .search-result .list .center .duration .time {
+        font-size: rem(26);
+        color: #999999; }
+    .search-result .list .center .incoming {
+      margin-right: rem(21); }
+    .search-result .list .right {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 19%;
+      font-size: rem(26);
+      color: #1786f6; }
+    .search-result .list .waring {
+      color: #ff7272; }
+  .search-result .expecial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0; }
+
+.up-loading, .no-more {
+  width: 100%;
+  height: rem(100); }
+
+.no-more {
+  color: #c6c6c6;
+  font-size: rem(24);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8f8fc; }

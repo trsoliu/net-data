@@ -1,0 +1,3 @@
+@charset "UTF-8";
+//rem(val) -- 传入数值换算出rem （比例32即一个页面分成了20格：1rem = 32px）
+@function rem($val){ @return $val/32+rem; }

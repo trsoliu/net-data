@@ -1,0 +1,90 @@
+/* pages/storageConsole/storageConsole.wxss */
+@import './../../assets/scss/_mixin.scss';
+@import './../../assets/scss/_border.scss';
+@import './../../assets/scss/itemStyle.scss';
+@import './../../assets/scss/loading.scss';
+
+
+.container{
+   
+//  height: 100%;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: space-between;
+//  padding: 200rpx 0;
+//  box-sizing: border-box;
+
+    .top-search{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        z-index: 2;
+//      position: absolute ;
+//      top: 0;
+//      left: 0;
+        width: 100%;
+        height: rem(108);
+        box-sizing: border-box;
+        padding: 0 rem(30);
+        background: #FFFFFF;
+        box-shadow: 0 rem(8) rem(16) 0 rgba(217, 226, 233, 0.50);
+        .search-input {
+            position: relative;
+            width: calc( 100% - 102rpx);
+            height: rem(60);
+            border-radius: rem(200);
+            background: rgb(242, 244, 248);
+            .icon-search {
+                height: 100%;
+                z-index: 2;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: rem(-5);
+                margin-left: rem(30);
+                color: rgb(153, 153, 153);
+                font-size: rem(28);
+                letter-spacing: rem(1);
+                line-height: rem(28);
+            }
+            .icon-clear {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: rem(14) rem(24) 0 rem(10);
+                color: #fff;
+                background: rgb(221, 227, 233);
+                font-size: rem(28);
+                width: rem(32);
+                height: rem(32);
+                border-radius: 50%;
+            }
+            .input {
+                width: 90%;
+                height: 100%;
+                box-sizing: border-box;
+                padding-left: rem(77);
+                border-radius: rem(200);
+                font-family: PingFangSC-Regular;
+                font-size: rem(30);
+                color: rgb(51, 51, 51);
+                letter-spacing: rem(1);
+                line-height: rem(30);
+            }
+        }
+        .search {
+            font-size: rem(34);
+            color: rgb(23, 134, 246);
+            letter-spacing: 0;
+            line-height: rem(34);
+        }
+    }
+    .list{
+        width: 90%;
+        margin: rem(20) auto;
+    }
+}
