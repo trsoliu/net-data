@@ -1,4 +1,4 @@
-// pages/storageConsole/storageConsole.js
+// pages/search/search.js
 
 const app = getApp()
 
